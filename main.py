@@ -9,6 +9,8 @@ list2 = ["John Elder", 41, list1, True]
 # Numpy - Numeric python
 # Data type of a numpy array is ndarray = n-dimensional array
 
+# Anything in a numpy array has to be of the same data type
+
 np1 = np.array([0, 1, 2, 3, 4, 5])
 print(np1)
 
