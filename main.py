@@ -1,73 +1,41 @@
 import numpy as np
 
 
-list1 = [1, 2, 3, 4, 5]
+# Slicing numpy arrays
 
-list2 = ["John Elder", 41, list1, True]
+np1 = np.array([1,2,3,4,5,6,7,8,9])
 
+# Return 2, 3, 4, 5
+print(np1[1:5])
 
-# Numpy - Numeric python
-# Data type of a numpy array is ndarray = n-dimensional array
+# Return from something till the end of the array?
+print(np1[3:])
 
-# Anything in a numpy array has to be of the same data type
+# Return Negative Slices
+# 7, 8
+print(np1[-3:-1])
 
-np1 = np.array([0, 1, 2, 3, 4, 5])
-print(np1)
+# Steps
+print(np1[1:5:2]) # [2 4]
 
-# Output: [0 1 2 3 4 5]
+# Steps on the entire arrray
+# [1 3 5 7 9]
+print(np1[::2])
 
-# Like the len function
-print(np1.shape)
+# Slice a 2-d array
+np2 = np.array([[1, 2, 3, 4, 5], [6, 7, 8 ,9, 10]])
+# Pull out a single item
+print(np2[0, 1])
 
-# Output: (6,)
+# Output: 2
 
+# Slice a 2-d array
+print(np2[0:1, 1:3])
 
-# anaother way of creating an array
-np2 = np.arange(10)
-print(np2)
+# Output: [[2 3]]
 
-# Output: [0 1 2 3 4 5 6 7 8 9]
+# Slice from both rows
+print(np2[0:2, 1:3])
 
-# Step
-np3 = np.arange(0, 10, 2)
-print(np3)
-
-# Output: [0 2 4 6 8]
-
-# Zeros
-np4 = np.zeros(10)
-print(np4)
-
-# Output: [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
-
-# Multidimensional zeros
-np5 = np.zeros((2, 10))
-print(np5)
-
-# Output: [[0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
-#  [0. 0. 0. 0. 0. 0. 0. 0. 0. 0.]]
-
-# Full
-np6 = np.full((10), 6)
-print(np6)
-
-# Output: [6 6 6 6 6 6 6 6 6 6]
-
-# Multidimensional Full
-np7 = np.full((2, 10), 6)
-print(np7)
-
-# Output: [[6 6 6 6 6 6 6 6 6 6]
-#  [6 6 6 6 6 6 6 6 6 6]]
-
-# Convert Python lists to np
-my_list = [1, 2, 3, 4, 5]
-np8 = np.array(my_list)
-
-print(np8)
-
-# Output: [1 2 3 4 5]
-
-print(np8[0])
-
-# Output: 1
+# Output: [[2 3]
+#  [7 8]]
