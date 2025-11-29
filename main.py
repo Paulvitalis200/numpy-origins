@@ -30,7 +30,7 @@ print(np2[0, 1])
 # Output: 2
 
 # Slice a 2-d array
-print(np2[0:1, 1:3])
+print(np2[0:1, 1:3]) # This means from the first subarray to the row just before the second one and slice from 1 to 3.
 
 # Output: [[2 3]]
 
