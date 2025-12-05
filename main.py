@@ -1,30 +1,22 @@
 import numpy as np
 
-# np.sort() Numerical
+# Search
+np1 = np.array([1,2,3,4,5,6,7,8,9,10])
+
+# x = np.where(np1 == 3)
+# print(x) # (array([2]),)
+# print(x[0]) # [2]
 #
-np1 = np.array([6,7,4,8,1,0,2])
-#
-# print(np.sort(np1))
+# np2 = np.array([1,2,3,4,5,6,7,8,9,10, 3])
+# y = np.where(np2 == 3)
+# print(y) # (array([ 2, 10]),)
+# print(y[0]) # [ 2 10]
+# print(np2[y[0]]) # [3 3]
 
-# Alphabetical
+# Return even items
+# y = np.where(np1 % 2 == 0)
+# print(y)
 
-# np2 = np.array(["John", "Wall", "Chris", "Paul", "Kevin", "Durant"])
-# print(np2)
-# print(np.sort(np2))
-
-# Boolean T/F
-# np3 = np.array([True, False, False, True])
-#
-# print(np3)
-# print(np.sort(np3))
-
-# Return a copy not change the original
-# print(np1)
-# print(np.sort(np1))
-# print(np1)
-
-# 2-d
-np4 = np.array([[6,7,1,9], [8,3,5,0]])
-print(np4)
-print(np.sort(np4))
-print(np4)
+# Return odd items
+z = np.where(np1 % 2 == 1)
+print(z) # (array([0, 2, 4, 6, 8]),)
