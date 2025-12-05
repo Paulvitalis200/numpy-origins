@@ -1,30 +1,30 @@
 import numpy as np
 
-#1-d
-np1 = np.array([1,2,3,4,5,6,7,8,9,10])
+# np.sort() Numerical
 #
-# for x in np1:
-#     print(x)
-
-
-#2-d
-np2 = np.array([[1,2,3], [6,7,8]])
+np1 = np.array([6,7,4,8,1,0,2])
 #
-# for x in np2:
-#     # print rows
-#     # print(x)
-#     for y in x:
-#         print(y)
+# print(np.sort(np1))
 
-#3-d Array
+# Alphabetical
 
-np3 = np.array([[[1,2,3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+# np2 = np.array(["John", "Wall", "Chris", "Paul", "Kevin", "Durant"])
+# print(np2)
+# print(np.sort(np2))
+
+# Boolean T/F
+# np3 = np.array([True, False, False, True])
 #
-# for x in np3:
-#     for y in x:
-#         for z in y:
-#             print(z)
+# print(np3)
+# print(np.sort(np3))
 
-# Use np.nditer()
-for x in np.nditer(np3):
-    print(x)
+# Return a copy not change the original
+# print(np1)
+# print(np.sort(np1))
+# print(np1)
+
+# 2-d
+np4 = np.array([[6,7,1,9], [8,3,5,0]])
+print(np4)
+print(np.sort(np4))
+print(np4)
