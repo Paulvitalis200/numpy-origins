@@ -1,27 +1,30 @@
 import numpy as np
 
-# Create 1-D Numpy Array and Get Shape
-np1 = np.array([1,2,3,4,5,6,7,8,9,10,11,12])
+#1-d
+np1 = np.array([1,2,3,4,5,6,7,8,9,10])
+#
+# for x in np1:
+#     print(x)
 
-print(np1.shape)
 
-# Create 2-D Array and get Shape, (rows/columns) - 2 rows, 6 columns
+#2-d
+np2 = np.array([[1,2,3], [6,7,8]])
+#
+# for x in np2:
+#     # print rows
+#     # print(x)
+#     for y in x:
+#         print(y)
 
-np2 = np.array([[1,2,3,4,5,6],[7,8,9,10,11,12]])
+#3-d Array
 
-print(np2.shape) # 2 rows, 6 columns
+np3 = np.array([[[1,2,3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
+#
+# for x in np3:
+#     for y in x:
+#         for z in y:
+#             print(z)
 
-# Reshape 2-D
-np3 = np1.reshape(3,4)
-print(np3)
-print(np3.shape)
-
-# Reshape 3-D
-np4 = np1.reshape(2, 3, 2)
-print(np4)
-print(np4.shape)
-
-# Flatten to 1-D
-np5 = np4.reshape(-1)
-print(np5)
-print(np5.shape)
+# Use np.nditer()
+for x in np.nditer(np3):
+    print(x)
