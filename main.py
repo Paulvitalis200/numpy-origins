@@ -1,22 +1,29 @@
 import numpy as np
 
-# Search
+# Filtering Numpy arrays with Boolean index lists
+
 np1 = np.array([1,2,3,4,5,6,7,8,9,10])
 
-# x = np.where(np1 == 3)
-# print(x) # (array([2]),)
-# print(x[0]) # [2]
+# x = [True, True, False, False, False, False, False, False, False, False]
 #
-# np2 = np.array([1,2,3,4,5,6,7,8,9,10, 3])
-# y = np.where(np2 == 3)
-# print(y) # (array([ 2, 10]),)
-# print(y[0]) # [ 2 10]
-# print(np2[y[0]]) # [3 3]
+# print(np1)
+# print(np1[x])
 
-# Return even items
-# y = np.where(np1 % 2 == 0)
-# print(y)
+# filtered = []
+#
+# for thing in np1:
+#     if thing > 5:
+#         filtered.append(True)
+#     else:
+#         filtered.append(False)
+#
+# print(np1)
+# print(filtered) # [False, False, False, False, False, True, True, True, True, True]
+# print(np1[filtered]) # [ 6  7  8  9 10]
 
-# Return odd items
-z = np.where(np1 % 2 == 1)
-print(z) # (array([0, 2, 4, 6, 8]),)
+# Numpy shortcut
+
+filtered = np1 % 2 == 0 # Get everything which the remainder is 0
+print(np1) # [ 1  2  3  4  5  6  7  8  9 10]
+print(filtered) # [False  True False  True False  True False  True False  True]
+print(np1[filtered]) # [ 2  4  6  8 10]
