@@ -1,30 +1,20 @@
 import numpy as np
 
-#1-d
-np1 = np.array([1,2,3,4,5,6,7,8,9,10])
-#
-# for x in np1:
-#     print(x)
+# Create a 1D numpy array
+
+data_array = np.array([1,2,4,3,5])
+
+num_list = [1,2,3,4,5,6,7]
+second_array = np.array(num_list)
 
 
-#2-d
-np2 = np.array([[1,2,3], [6,7,8]])
-#
-# for x in np2:
-#     # print rows
-#     # print(x)
-#     for y in x:
-#         print(y)
+print(data_array)
 
-#3-d Array
+print(second_array)
 
-np3 = np.array([[[1,2,3], [4, 5, 6]], [[7, 8, 9], [10, 11, 12]]])
-#
-# for x in np3:
-#     for y in x:
-#         for z in y:
-#             print(z)
+# Generating random integers
 
-# Use np.nditer()
-for x in np.nditer(np3):
-    print(x)
+randomness = np.random.randint(0, 10, size=5)
+randomness2 = np.random.rand(5)
+print(randomness)
+print(randomness2)
