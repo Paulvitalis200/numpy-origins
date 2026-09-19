@@ -1,11 +1,11 @@
 import numpy as np
 
+array = np.arange(0, 10, 2)
+array2 = np.arange(0, 11, 2, dtype=float)
 
-num = np.empty(5)
+print(array)
+print(array2)
 
-num1 = np.zeros(4)
-num2 = np.ones(4)
-
-print(num)
-print(num1)
-print(num2)
+# Output:
+# [0 2 4 6 8]
+# [ 0.  2.  4.  6.  8. 10.]
