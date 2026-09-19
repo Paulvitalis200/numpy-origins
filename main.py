@@ -1,20 +1,11 @@
 import numpy as np
 
-# Create a 1D numpy array
 
-data_array = np.array([1,2,4,3,5])
+num = np.empty(5)
 
-num_list = [1,2,3,4,5,6,7]
-second_array = np.array(num_list)
+num1 = np.zeros(4)
+num2 = np.ones(4)
 
-
-print(data_array)
-
-print(second_array)
-
-# Generating random integers
-
-randomness = np.random.randint(0, 10, size=5)
-randomness2 = np.random.rand(5)
-print(randomness)
-print(randomness2)
+print(num)
+print(num1)
+print(num2)
