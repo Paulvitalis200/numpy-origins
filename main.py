@@ -30,3 +30,58 @@ print(str_array)
 # Output:
 # 1.  2.4 3.3]
 # 1.+2.j 3.+4.j]
+
+#index array ordering
+indexing_arr = np.array([29,39,33,90,10])
+indices = np.array([2,3])
+
+print(indexing_arr[indices])
+
+multi_array = np.array([
+    [[2,3,4], [30,32,43]],
+    [[12,90,10], [12,32,10]]
+])
+
+
+print(multi_array)
+
+zeros_array = np.zeros((3,4))
+ones_array = np.ones((2,4))
+
+print(zeros_array)
+print(ones_array)
+
+
+
+normal_arr = np.arange(12)
+reshaped = normal_arr.reshape(3,4)
+
+print(reshaped)
+
+
+
+# Indexing and slicing 2D arrays
+
+# Creating a 4x5 array with values from 1 to 20
+arr = np.arange(1, 21).reshape(4, 5)
+
+# 1. Extract the element at the third row and fourth column
+element1 = arr[2, 3]
+
+
+# 2. Extract the entire first row
+element2 = arr[0, :]
+
+
+# 3. Extract the entire last column
+element3 = arr[:,4]
+
+
+# 4. Extract a subarray containing the first three rows and the first two columns
+element4 = arr[:3, :2]
+
+
+print(element1)
+print(element2)
+print(element3)
+print(element4)
